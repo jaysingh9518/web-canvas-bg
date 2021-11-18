@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interactive Canvas with Resize</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="img/j.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <canvas id="myCanvas"></canvas>
+
+  <div id="up-main">
+    <div id="intro" class="data-box bg-black-transparent w-92 p-6">
+      <div id="content">
+        <h1 id="fade1">Hello World!, I'm Jay Prakash</h1>
+        <h3 id="fade2">Scroll down to learn more about me</h3>
+        <p id="fade3">make sure to have fun while you're at it.</p>
+      </div>
+    </div>
+    <div class="button">
+      <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+        <rect class="shape" height="60" width="320" />
+      </svg>
+      <div class="text"><a href="#down-main">SCROLL DOWN</a></div>
+    </div>
+  </div>
+  <div id="down-main">
+    <div class="button2">
+      <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+        <rect class="shape" height="60" width="320" />
+      </svg>
+      <div class="text"><a href="#up-main">GO UP</a></div>
+    </div>
+    <div class="main-div">
+      <img src="img/profilepic.jpg" alt="Profile Pic" width="250px">
+      <h1>Jay Prakash</h1>
+      <p>A Man who wanna travel the world! with his passion.</p>
+      <div id="social-links">
+        <a class="fa fa-facebook" data-title="facebook.com/jaysingh9518" href="http://facebook.com/jaysingh9518" target="_blank"></a>
+        <a class="fa fa-twitter" data-title="twitter.com/jaysingh9518" href="http://twitter.com/jaysingh9518" target="_blank"></a>
+        <a class="fa fa-instagram" data-title="instagram.com/jaysingh9518" href="http://instagram.com/jaysingh9518" target="_blank"></a>
+        <a class="fa fa-github" data-title="github.com/jaysingh9518" href="https://github.com/jaysingh9518" target="_blank"></a>
+        <a class="fa fa-google" data-title="jaysingh9518@gmail.com" href="mailto:jaysingh9518@gmail.com"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div>
+      <h3>@jaysingh9518</h3><hr>
+      <p>Copyright &copy; 2021 </p>
+    </div>
+  </div>
+
+  <script src="js/interactive.js"></script>
+
+
+</body>
+</html>

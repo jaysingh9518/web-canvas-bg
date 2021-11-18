@@ -1,0 +1,291 @@
+canvas{
+    position: fixed;
+    left: 0rem;
+    top: 0rem;
+    z-index: -1;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+#up-main{
+  /* margin-left: 10%; */
+  /* margin-right: 10%; */
+  width: 80%;
+  margin: auto;
+  float: none;
+  height: 100vh;
+}
+
+#down-main{
+  /* margin-left: 10%; */
+  /* margin-right: 10%; */
+  width: 80%;
+  margin: auto;
+  float: none;
+  height: 100vh;
+}
+
+#down-main img{
+  float: center;;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 5px;
+  margin: auto;
+  position: inherit;
+  display: block;
+  /* place-items: center; */
+}
+
+#down-main h1{
+  font-size: 2.5em;
+  text-align: center;
+  /* width: 20%; */
+  /* margin: 2vw 39vw 2vw 39vw; */
+}
+
+#down-main p {
+  font-size: 1.2em;
+  text-align: center;
+  /* margin: auto; */
+}
+
+.data-box{
+  z-index: 2;
+}
+
+#fade1, #fade2, #fade3{
+  opacity: 0;
+}
+
+.bg-black-transparent{
+  background-color: rgba(0, 0, 0, 0.7)
+}
+
+.w-92{
+  width: 27rem;
+}
+
+.p-6{
+    padding: 1rem;
+}
+
+.wrapper{
+  margin : 20px;
+  top: 0;
+  color: red;
+  font-size: 0.5vw;
+  margin: 20px;
+  background: #000;
+  line-height: 1;
+  min-height: 100%;
+  display: block;
+  place-items: center;
+  min-height: calc(100vh - 16px);
+}
+
+#intro{
+  position: relative;
+  top: 10rem;
+  margin: 0 auto;
+  font-family: 'Arsenal', sans-serif;
+  color: #fff;
+  text-align: center;
+  width:  20rem;
+  height: 1rem;
+}
+
+.button {
+  display: none;
+  height: 1rem;
+	margin-top: 8rem;
+  margin-bottom: 0rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 25%;
+  transform: translateY(-50%);
+  width: 20rem;
+}
+
+.button2 {
+  display: none;
+  height: 1rem;
+	margin-top: 6rem;
+  margin-bottom: 0rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 2%;
+  transform: translateY(-50%);
+  width: 20rem;
+}
+
+a{
+  text-decoration: none;
+  color: #1e6186;
+}
+
+.text {
+  text-align: center;
+  text-decoration-style: solid;
+  color: #1e6186;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  line-height: 2rem;
+  position: relative;
+  top: -3.1rem;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 115 574;
+  stroke-dashoffset: 205;
+  stroke-width: 0.2rem;
+  stroke: #1e6186;
+  transition: 1s;
+}
+
+.button:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+	stroke: red;
+}
+
+.button2:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+	stroke: red;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 115 574;
+    stroke-dashoffset: 205;
+    stroke-width: 0.3rem;
+  }
+  100% {
+    stroke-dasharray: 789;
+    stroke-dashoffset: 0;
+    stroke-width: 0.3rem;
+  }
+}
+
+.outer-div{
+  text-align: center;
+  font-family: 'Arsenal', sans-serif;
+  color: #fff;
+}
+
+:root {
+  --color-1: #186cb8;
+  --color-2: #2a9a9f;
+  --color-3: #f1b211;
+  --color-4: #e83611;
+  --color-5: #f9002f;
+}
+
+.main-div{
+  display: none;
+  margin-top: 3.5rem;
+  padding-top: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.main-div h1 {
+  font-family: "Exo", sans-serif;
+  font-size: 1vw;
+  font-weight: 600;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin-top: -0.15%;
+  margin-right: auto;
+  margin-bottom: -0.65%;
+  margin-left: auto;
+  text-transform: uppercase;
+  background: linear-gradient(219deg,
+    var(--color-1) 19%,
+    transparent 19%,transparent 20%,
+    var(--color-2) 20%, var(--color-2)  39%,
+    transparent 39%,transparent 40%,
+    var(--color-3) 40%,var(--color-3) 59% ,
+    transparent 59%,transparent 60%,
+    var(--color-4) 60%, var(--color-4) 79%,
+    transparent 79%, transparent 80%,
+    var(--color-5) 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.main-div p {
+  margin-top: 0.75%;
+}
+
+#social-links{
+  display: flex;
+  place-items: center;
+  margin-left: 28%;
+  margin-right: 30%;
+  margin-top: -4%;
+  margin-bottom: 0%;
+  /* margin: 0%; */
+  width: 60%;
+}
+
+
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1rem 0.3rem 1.5rem 0.3rem;
+  max-width: 100%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.footer{
+  color: black;
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #ddd;
+  opacity: 0.75;
+  margin: 0%;
+  text-size-adjust: auto;
+}
+
+.footer h3 {
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  color: var(--color-1);
+  padding: 0%;
+  margin-top: 0.25%;
+  margin-bottom: -0.35%;
+}
+
+.footer hr {
+  border: none;
+  border-top: 3.5px dotted var(--color-2);
+  overflow: visible;
+}
+
+.footer p {
+  padding: 0%;
+  margin: 0%;
+  margin-top: -0.5%;
+  margin-bottom: 0.5%;
+}
