@@ -13,13 +13,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
+  <header >
+    <div>
+      <h1>A Website with Interactive BG</h1>
+    </div>
+  </header>
+  
   <canvas id="myCanvas"></canvas>
 
-  <div id="up-main">
+  <section id="up-main">
     <div id="intro" class="data-box bg-black-transparent w-92 p-6">
       <div id="content">
-        <h1 id="fade1">Hello World!, I'm Jay Prakash</h1>
+        <h2 id="fade1">Hello World!, Welcome to my Website</h2>
         <h3 id="fade2">Scroll down to learn more about me</h3>
         <p id="fade3">make sure to have fun while you're at it.</p>
       </div>
@@ -30,17 +35,18 @@
       </svg>
       <div class="text"><a href="#down-main">SCROLL DOWN</a></div>
     </div>
-  </div>
-  <div id="down-main">
+  </section>
+
+  <section id="down-main">
     <div class="button2">
       <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
         <rect class="shape" height="60" width="320" />
       </svg>
-      <div class="text"><a href="#up-main">GO UP</a></div>
+      <div class="text"><a accesskey="h" href="#up-main">GO UP</a></div>
     </div>
     <div class="main-div">
       <img src="img/profilepic.jpg" alt="Profile Pic" width="250px">
-      <h1>Jay Prakash</h1>
+      <h2>Jay Prakash</h2>
       <p>A Man who wanna travel the world! with his passion.</p>
       <div id="social-links">
         <a class="fa fa-facebook" data-title="facebook.com/jaysingh9518" href="http://facebook.com/jaysingh9518" target="_blank"></a>
@@ -50,16 +56,16 @@
         <a class="fa fa-google" data-title="jaysingh9518@gmail.com" href="mailto:jaysingh9518@gmail.com"></a>
       </div>
     </div>
-  </div>
-  <div class="footer">
+  </section>
+
+  <footer class="footer">
     <div>
       <h3>@jaysingh9518</h3><hr>
       <p>Copyright &copy; 2021 </p>
     </div>
-  </div>
+  </footer>
 
   <script src="js/interactive.js"></script>
-
 
 </body>
 </html>
