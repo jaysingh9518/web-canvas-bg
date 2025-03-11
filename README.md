@@ -13,7 +13,7 @@ An interactive web-based canvas background project that combines creativity with
 - CSS  
 
 ### 🌐 Live Demo  
-[Check it out here](https://jaysingh9518.github.io/web-canvas-bg)  
+[Check it out here](https://jaysingh9518.github.io/Web-Canvas-Background-Interactive-Visual-Effects/)  
 
 ### 📄 Instructions  
 1. Clone the repository  
